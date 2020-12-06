@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% include "header.twig" %}
+
+<body>
+    {% include "navigation.twig" %}
+    <div class="container-xl align-items-center">
+          <div class="page-header">
+          <div class="row align-items-center">
+            <div class="col-sm mb-2 mb-sm-0">
+              <h1 class="page-header-title">{{ page_title }}</h1>
+            </div>
+          </div>
+        </div>
+      <div class=" align-items-center">
+        {% include "flash.twig" %}
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+   {% include "footer.twig" %}
+    
+</body>
+</html>

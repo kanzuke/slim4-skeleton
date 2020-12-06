@@ -1,0 +1,50 @@
+{% block flash_info_no_title %}
+  <div class="container-xl">
+        {% if not flash['info_no_title'] is empty %}
+          <div class="alert alert-info mt-1">
+              {% for msg in flash['info_no_title'] %}
+              {{ msg | raw }}<br/>
+              {% endfor %}
+          </div>
+        {% endif %}
+    
+      {% block flash_success %}
+        {% if not flash['success'] is empty %}
+          <div class="alert alert-success mt-5">
+            <h4 class="alert-heading">Erreur</h4>
+            <ul>
+              {% for msg in flash['success'] %}
+              <li>{{ msg | raw }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endblock %}
+
+      {% block flash_error %}
+        {% if not flash['error'] is empty %}
+          <div class="alert alert-danger mt-5">
+            <h4 class="alert-heading">Erreur</h4>
+            <ul>
+              {% for msg in flash['error'] %}
+              <li>{{ msg | raw }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endblock %}
+
+      {% block flash_info %}
+        {% if not flash['info'] is empty %}
+          <div class="alert alert-warning mt-1">
+            <h4 class="alert-heading">Information</h4>
+            <ul>
+              {% for msg in flash['info'] %}
+              <li>{{ msg | raw}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endblock %}
+  </div>
+{% endblock %}

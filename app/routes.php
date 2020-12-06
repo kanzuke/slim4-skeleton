@@ -14,7 +14,7 @@ return function (App $app) {
     //     return $response;
     // });
 
-    //$app->get('/', \App\Controllers\DashboardController::class . ':home')->setName('home');
+    $app->get('/', \App\Controllers\DashboardController::class . ':home')->setName('home');
     
 
 

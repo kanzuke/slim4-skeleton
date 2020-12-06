@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% if page_title is defined %} {{ page_title }} {% endif %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ url_for('home') }}vendor/bootstrap/css/bootstrap.min.css">
+    {# <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/cssbootstrap.min.css"> #}
+    <link rel="stylesheet" href="{{ url_for('home') }}css/base.min.css">
+    <link rel="stylesheet" href="{{ url_for('home') }}vendor/fontawesome/css/all.min.css">
+    <link rel="icon" href="{{ url_for('home') }}favicon.ico" />
+
+
+    <script src="{{ url_for('home') }}vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="{{ url_for('home') }}vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="{{ url_for('home') }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('home') }}/vendor/datatables/datatables.min.css"/>
+    <script type="text/javascript" src="{{ url_for('home') }}/vendor/datatables/datatables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('home') }}/vendor/unfold/hs-unfold.min.css"/>
+    <script type="text/javascript" src="{{ url_for('home') }}/vendor/unfold/hs-unfold.min.js"></script>
+
+</head>

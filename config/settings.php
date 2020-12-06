@@ -12,4 +12,6 @@ $settings = [];
 
 
 $settings['app']['basepath'] = '/suivi-finances';
+
+
 ?>

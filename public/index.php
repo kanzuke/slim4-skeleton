@@ -15,7 +15,6 @@
 
     require "../vendor/autoload.php";
     require "../config/settings.php";
-    
 
     $container = new Container();
     AppFactory::setContainer($container);
